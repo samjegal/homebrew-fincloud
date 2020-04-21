@@ -6,7 +6,7 @@ class TerraformProviderFincloud < Formula
     head "https://github.com/samjegal/terraform-provider-fincloud.git"
     version "v1.0.0"
 
-    depends_on "terraform" >= "0.12.20"
+    depends_on "terraform"
 
     def install
         (var/"~/.terraform.d/plugins/darwin_amd64").mkpath
