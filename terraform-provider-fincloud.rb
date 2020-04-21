@@ -9,6 +9,6 @@ class TerraformProviderFincloud < Formula
     depends_on "terraform"
 
     def install
-        bin.install "fincons" "terraform-provider-fincloud"
+        bin.install terraform-provider-fincloud"
     end
 end
