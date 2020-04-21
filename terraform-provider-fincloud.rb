@@ -9,7 +9,6 @@ class TerraformProviderFincloud < Formula
     depends_on "terraform"
 
     def install
-        (var/"~/.terraform.d/plugins/darwin_amd64").mkpath
-        (var/"~/.terraform.d/plugins/darwin_amd64").install "terraform-provider-fincloud"
+        bin.install "fincons" "terraform-provider-fincloud"
     end
 end
